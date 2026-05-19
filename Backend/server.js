@@ -1,14 +1,15 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
-import bcrypt from 'bcrypt'
-import jwt from 'jsonwebtoken'
 import cors from 'cors'
+import authRouter from './route/authRoutes.js'
 
 dotenv.config()
 const app = express()
 app.use(express.json())
 app.use(cors())
+
+app.use('/api',authRouter)
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
