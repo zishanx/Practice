@@ -1,7 +1,13 @@
-export default function App(){
-  return(
-    <>
-      <h1 className="text-red-500">Just Checking it out!!</h1>
-    </>
+import Login from "./pages/login"
+import { BrowserRouter, Routes, Route } from "react-router"
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />}></Route>
+      </Routes>
+    </BrowserRouter>
+
   )
 }
