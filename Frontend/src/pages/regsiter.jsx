@@ -39,7 +39,7 @@ export default function Register() {
             <div className="bg-white border border-gray-200 rounded-xl p-10 w-full max-w-md">
                 <p className="text-xs font-medium tracking-widest mg-1 text-[#D85A30]">Ziz</p>
                 <h1 className="text-2xl font-medium text-gray-900 mb-1">Register</h1>
-                <p className="text-sm text-gray-500 mb-8">Register for a new accoung</p>
+                <p className="text-sm text-gray-500 mb-8">Register for a new account</p>
 
                 <div className="flex-flex-col gap-4">
                     <div>
