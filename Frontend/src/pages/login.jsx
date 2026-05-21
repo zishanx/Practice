@@ -57,7 +57,9 @@ export default function Login() {
                 </div>
 
                 {error && <p className="text-red-500 text-xs text-center mt-3">{error}</p>}
-                <p className="text-xs text-gray-400 text-center mt-6">Don't have an account? <span className="font-medium cursor-pointer" style={{ color: '#D85A30' }}>Register</span></p>
+                <p className="text-xs text-gray-400 text-center mt-6">Don't have an account? <span onClick={()=>{
+                    navigate('/register')
+                }} className="font-medium cursor-pointer" style={{ color: '#D85A30' }}>Register</span></p>
             </div>
         </div>
     )
