@@ -22,7 +22,7 @@ export default function Login() {
         try {
             e.preventDefault();
             setLoading(true)
-            const res = await api.post('/login', form);
+            const res = await api.post('/api/login', form);
             login(res.data.user, res.data.token)
             navigate('/')
 

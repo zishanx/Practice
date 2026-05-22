@@ -24,7 +24,7 @@ export default function Register() {
         setLoading(true)
         try {
 
-            await api.post("/register", form)
+            await api.post("/api/register", form)
             navigate('/login')
         } catch (err) {
             setError(err.response?.data?.message)
